@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Cleaning Express</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v13.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="install_email"
+      attribution_version="biz_inbox"
+      page_id="102885622232388"
+    ></div>
+
+    <!-- ======= Top Bar ======= -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone-fill phone-icon"></i> +92-335-0416208
+        </div>
+        <div class="social-links d-none d-md-block">
+          <a
+            href="https://www.facebook.com/Cleaningexpresslahore/"
+            target="_blank"
+            class="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/cleaningexpresslahore/"
+            target="_blank"
+            class="instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/cleaning-express-lahore/"
+            target="_blank"
+            class="linkedin"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <a href="index.html" class="logo me-auto"
+          ><img src="assets/img/logo.png" alt="" class="img-fluid"
+        /></a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div
+        id="heroCarousel"
+        data-bs-interval="5000"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide 1 -->
+          <div
+            class="carousel-item active"
+            style="background-image: url(assets/img/slide/slide-1.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Welcome to <span>Cleaning Express</span>
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  We strive to provide best services with the best customer
+                  serivce at hand.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-2.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Commercial Cleaning Services
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Our professional cleaning staff ensures that all of your
+                  business sites are clean.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            style="background-image: url(assets/img/slide/slide-3.jpg)"
+          >
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">
+                  Residential Cleaning Services
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  With the help of our professional staff, you can rest assured
+                  that your home is clean and dirt free.
+                </p>
+                <a
+                  href="#about"
+                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bi bi-chevron-left"
+            aria-hidden="true"
+          ></span>
+        </a>
+
+        <a
+          class="carousel-control-next"
+          href="#heroCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bi bi-chevron-right"
+            aria-hidden="true"
+          ></span>
+        </a>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Us</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2">
+              <img
+                src="assets/img/general_cleaning.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+              style="margin-top: auto; margin-bottom: auto"
+            >
+              <h4>
+                A professional cleaning company based in Lahore. We offer
+                cleaning services to commercial and residential areas all over
+                Lahore.
+              </h4>
+              <!-- <ul>
+              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="section-title">
+          <h2>Why Us?</h2>
+        </div>
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-4 col-md-6 content-item">
+              <span>01</span>
+              <h4>Convenience</h4>
+              <p>
+                Who does not want a readily accessible cleaning staff to take
+                care of all your cleaning chores?
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 content-item">
+              <span>02</span>
+              <h4>Experience</h4>
+              <p>
+                With an experience of over 13 years, we ensure that you get the
+                best of the best.
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 content-item">
+              <span>03</span>
+              <h4>Pricing</h4>
+              <p>
+                With no surprise bills, our pricing is competitive and fair.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Why Us Section -->
+
+      <!-- ======= Our Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Clients</h2>
+            <p></p>
+          </div>
+
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/haveli.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/poet.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/chenone.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/phd_pharma.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/nimir.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/al_nasser.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/us_apparel.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/chenab.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Our Clients Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>Our professional staff ensures that you get the best of:</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box iconbox-blue">
+                <div class="icon">
+                  <img src="assets/img/sweeping.png" alt="" />
+                </div>
+                <h4><a href="#">Janitorial Services</a></h4>
+                <p>
+                  Our highly qualified and experienced commercial housekeeping
+                  team ensures that your office space remains ready for business
+                  operations and that germs/viruses that may cause any type of
+                  disease are eliminated. You can be certain that your
+                  office/building will be cleaned thoroughly and will be free of
+                  any germs, bacteria, and viruses.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box iconbox-orange">
+                <div class="icon">
+                  <img src="assets/img/glass_clean.png" alt="" />
+                </div>
+                <h4><a href="#">Windows Cleaning Services</a></h4>
+                <p>
+                  Using powerful, eco-friendly products, we will clean your
+                  windows top to bottom, until they sparkle like new.
+                </p>
+                <p>
+                  Our leading-edge equipment allows for professional grade
+                  window cleaning that takes half the time of traditional window
+                  cleaning methods.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <div class="icon">
+                  <img src="assets/img/disinfection.png" alt="" />
+                </div>
+                <h4><a href="#">Disinfection Services</a></h4>
+                <p>
+                  Cleaning Express delivers a fast response, discrete and
+                  legally compliant range of disinfection services to help
+                  protect your business and homes against infectious bacteria,
+                  viruses and disease
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div
+              class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <div class="icon">
+                  <img src="assets/img/renovation.png" alt="" />
+                </div>
+                <h4><a href="#">Renovation Services</a></h4>
+                <p>
+                  If you're planning a renovation and you know you can't do it
+                  on you'r own, you're likely considering hiring a renovation
+                  company. renovation is a great chance for upgrading your
+                  house,Office's improving the standard of life. So, if you want
+                  to undertake renovation, feel free to contact us anytime.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-6 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box iconbox-pink">
+                <div class="icon">
+                  <img src="assets/img/door-to-door.png" alt="" />
+                </div>
+                <h4><a href="#">Door To Door Cleaning Services</a></h4>
+                <p>
+                  We also provide Door to Door Cleaning Services, A team of
+                  proffesional Cleaners are always ready to provide there
+                  services at your door steps.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Our Vision</h3>
+              <p>
+                We strive to act with integrity towards our staff, our
+                customers, the community and the environment
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle nav-link scrollto" href="#contact"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>You can reach us at:</p>
+          </div>
+
+          <div class="row">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>505A-Nargis block, Allama iqbal town, Lahore, Pakistan</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>sales@cleaningexpresslahore.pk</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>042-35340945, +92-335-0416208, +92-300-4442859</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Cleaning Express</h3>
+        <p>All Rights Reserved</p>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/Cleaningexpresslahore/"
+            target="_blank"
+            class="facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/cleaningexpresslahore/"
+            target="_blank"
+            class="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/cleaning-express-lahore/"
+            target="_blank"
+            class="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
